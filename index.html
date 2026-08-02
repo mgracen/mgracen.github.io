@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mike Gracen — Projects</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23161616'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Arial' font-weight='700' fill='%23F5F3EE' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#161616; --paper:#F5F3EE; --paper-raised:#FFFFFF; --ink-soft:#5B5B54; --line:#E0DDD3;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{ background:var(--paper); color:var(--ink); font-family:'Roboto',sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap{ max-width:960px; margin:0 auto; padding:56px 24px 90px; }
+
+  header{ margin-bottom:48px; }
+  header .eyebrow{ font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:10px; }
+  header h1{ font-size:clamp(36px,6vw,54px); font-weight:900; margin:0; letter-spacing:-0.02em; line-height:1.05; }
+  header p{ font-size:16px; color:var(--ink-soft); max-width:560px; line-height:1.6; margin:16px 0 0; }
+
+  .grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+  @media (max-width:680px){ .grid{ grid-template-columns:1fr; } }
+
+  .card{
+    background:var(--paper-raised); border:1px solid var(--line); border-radius:4px;
+    padding:26px; display:flex; flex-direction:column; gap:10px;
+    text-decoration:none; color:var(--ink); position:relative; overflow:hidden;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .card:hover{ transform:translateY(-2px); box-shadow:0 10px 24px rgba(0,0,0,0.08); }
+  .card .accent{ position:absolute; top:0; left:0; width:100%; height:5px; }
+  .card h2{ font-size:19px; font-weight:700; margin:6px 0 0; letter-spacing:-0.01em; }
+  .card p{ font-size:13.5px; color:var(--ink-soft); line-height:1.55; margin:0; flex:1; }
+  .card .go{ font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:var(--ink); font-weight:500; letter-spacing:0.02em; display:flex; align-items:center; gap:6px; margin-top:4px; }
+  .card .go svg{ width:13px; height:13px; transition:transform .15s ease; }
+  .card:hover .go svg{ transform:translate(2px,-2px); }
+  .card .tag{ font-family:'IBM Plex Mono',monospace; font-size:10.5px; text-transform:uppercase; letter-spacing:0.06em; color:var(--ink-soft); }
+
+  footer{ margin-top:56px; padding-top:24px; border-top:1px solid var(--line); font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-soft); }
+  footer a{ color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line); }
+  footer a:hover{ color:var(--ink); border-color:var(--ink-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Mike Gracen</div>
+    <h1>Projects &amp; experiments.</h1>
+    <p>A working collection of tools and side builds, spanning local SEO, gardening, live music archiving, retro gaming, and a couple of things built purely for fun.</p>
+  </header>
+
+  <div class="grid">
+
+    <a class="card" href="https://mgracen.github.io/napdetector/">
+      <div class="accent" style="background:#2B6E63;"></div>
+      <div class="tag">SEO Tool</div>
+      <h2>NAPCheck</h2>
+      <p>Checks your business listings across Google, Apple Maps, Yelp, and Bing, then generates ready-to-use schema markup, an SEO title and description, and a priority-ordered checklist to get your local listings right.</p>
+      <div class="go">Visit the app <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </a>
+
+    <a class="card" href="https://mgracen.github.io/florida-planting-app/">
+      <div class="accent" style="background:#5B8A3A;"></div>
+      <div class="tag">Gardening</div>
+      <h2>Florida Planting App</h2>
+      <p>A planting calendar built around Florida's specific growing zones and seasons, so you know what actually goes in the ground and when, instead of guessing from generic national advice.</p>
+      <div class="go">Visit the app <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </a>
+
+    <a class="card" href="https://mgracen.github.io/mystagevault/app.html">
+      <div class="accent" style="background:#8A5A9E;"></div>
+      <div class="tag">Personal Archive</div>
+      <h2>My Stage Vault</h2>
+      <p>A personal archive for tracking live shows, setlists, and concert memories, built to hold on to the details that fade fast after a good night out.</p>
+      <div class="go">Visit the app <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </a>
+
+    <a class="card" href="https://github.com/mgracen/retro-launcher/">
+      <div class="accent" style="background:#C9772E;"></div>
+      <div class="tag">Gaming &middot; Repo only</div>
+      <h2>Retro Game Launcher</h2>
+      <p>A launcher and organizer for a classic game library, built to make browsing and firing up retro titles feel a lot less like digging through folders.</p>
+      <div class="go">View the repo <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </a>
+
+    <a class="card" href="https://mgracen.github.io/dungeon-test/">
+      <div class="accent" style="background:#7A2E1D;"></div>
+      <div class="tag">Game</div>
+      <h2>Dungeon Test</h2>
+      <p>An experimental dungeon crawler used as a testbed for RPG mechanics and puzzle design, more prototype than polished game, and better for it.</p>
+      <div class="go">Visit the app <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </a>
+
+    <a class="card" href="https://mgracen.github.io/horror-tracker/">
+      <div class="accent" style="background:#3A2E3E;"></div>
+      <div class="tag">Tracker</div>
+      <h2>Horror Movie Tracker</h2>
+      <p>Track, rate, and organize the horror movies you've watched, want to watch, and can't stop thinking about long after the credits roll.</p>
+      <div class="go">Visit the app <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </a>
+
+  </div>
+
+  <footer><a href="https://github.com/mgracen/" target="_blank" rel="noopener">github.com/mgracen</a></footer>
+
+</div>
+</body>
+</html>
